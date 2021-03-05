@@ -1,0 +1,29 @@
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body{
+    // color: white;
+    // background: #101010;
+    margin: 0;
+    padding: 0;
+    line-height: 1.3;
+    font-size: 16px;
+    // font-family: 'DM Serif Display', serif; //400
+    font-family: 'Karla', sans-serif; //400 700
+}
+
+h1, h2, h3{
+    font-family: 'DM Serif Display', serif;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

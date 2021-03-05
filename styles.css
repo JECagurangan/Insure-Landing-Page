@@ -1,0 +1,124 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 100%;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.3;
+  font-size: 16px;
+  font-family: 'Karla', sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: 'DM Serif Display', serif;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar {
+  width: 100%;
+  padding: 25px;
+  max-height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar__logo {
+  height: 20px;
+  max-width: 112px;
+  max-height: 20px;
+}
+
+.navbar__hamburger {
+  width: 34px;
+  height: 34px;
+  background-image: url("./images/icon-hamburger.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.intro-img {
+  width: 100%;
+  min-width: 375px;
+  min-height: 450px;
+  max-height: 450px;
+  background-image: url("./images/image-intro-mobile.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.humanizing {
+  width: 100%;
+  min-width: 375px;
+  height: 500px;
+  padding: 93px 28px 93px 28px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #2d2640;
+  color: #fafafa;
+  text-align: center;
+}
+
+.humanizing__h2 {
+  margin: 0;
+  margin-bottom: 24px;
+  font-size: 46px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.humanizing__p {
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-weight: normal;
+  line-height: 1.6;
+  color: #fafafa;
+}
+
+.humanizing__button {
+  min-width: 148px;
+  min-height: 40px;
+  background-color: #2d2640;
+  color: #fafafa;
+  border: 2px solid #fafafa;
+}
+/*# sourceMappingURL=styles.css.map */

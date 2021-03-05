@@ -1,0 +1,24 @@
+.navbar{
+    width: 100%;
+    padding: 25px;
+    max-height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar__logo{
+    height: 20px;
+    max-width: 112px;
+    max-height: 20px;
+}
+
+.navbar__hamburger{
+    width: 34px;
+    height: 34px;
+
+    background-image: url('./images/icon-hamburger.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
