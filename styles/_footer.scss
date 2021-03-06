@@ -1,0 +1,93 @@
+footer {
+  position: relative;
+  z-index: -2;
+
+  .footer-bg-top-mobile {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    width: 100%;
+    max-height: 173.45px;
+  }
+
+  width: 100%;
+  height: 1028px;
+  padding-top: 90px;
+
+  background-color: $light-gray;
+}
+
+footer .logos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .footer-logo {
+    max-width: 116px;
+    min-height: 20px;
+
+    margin-bottom: 30px;
+  }
+
+  .social {
+    svg:not(:last-child) {
+      margin-right: 17px;
+    }
+
+    svg {
+      fill: $dark-gray;
+      transition: fill 300ms ease-in-out;
+    }
+
+    svg:hover {
+      fill: $dark-violet;
+    }
+  }
+}
+
+footer .hr {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+footer span {
+  display: block;
+
+  background-color: $dark-gray;
+  width: 330px;
+  height: 1px;
+}
+
+.footer-section {
+  text-align: center;
+  margin-bottom: 35px;
+
+  h4 {
+    color: $dark-gray;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+
+  a {
+    display: block;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    color: $dark-violet;
+
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 15px;
+
+    transition: text-decoration-color 500ms ease-in-out;
+
+    &:hover {
+      text-decoration-color: $dark-violet;
+    }
+  }
+}
+
+//90

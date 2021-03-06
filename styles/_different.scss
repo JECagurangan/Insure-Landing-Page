@@ -1,0 +1,45 @@
+.different {
+  width: 100%;
+  min-height: 1315px;
+
+  padding: 140px 26px;
+  text-align: center;
+}
+
+.different .hr {
+  display: flex;
+  justify-content: center;
+}
+
+.different span {
+  display: block;
+
+  background-color: $dark-violet;
+  width: 152px;
+  height: 1px;
+}
+
+.different h2 {
+  font-weight: 500;
+  font-size: 45px;
+  margin-top: 30px;
+  margin-bottom: 70px;
+}
+
+.different h3 {
+  font-weight: 500;
+  font-size: 28px;
+  margin: 0;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.different p {
+  margin: 0;
+  margin-bottom: 50px;
+  line-height: 1.8;
+}
+
+.different .last-p {
+  margin-bottom: 0;
+}

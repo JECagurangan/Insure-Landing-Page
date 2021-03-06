@@ -1,57 +1,81 @@
-.intro-img{
-    width: 100%;
-    min-width: 375px;
-    min-height: 450px;
-    max-height: 450px;
+.intro-img {
+  width: 100%;
+  min-width: 375px;
+  min-height: 450px;
+  max-height: 450px;
 
-    background-image: url('./images/image-intro-mobile.jpg');
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url("./images/image-intro-mobile.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.humanizing{
-    width: 100%;
-    min-width: 375px;
-    height: 500px;
-    padding: 93px 28px 93px 28px;
+.humanizing {
+  position: relative;
+  z-index: -2;
 
+  .intro-bg-left-mobile {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+  }
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  .intro-bg-right-mobile {
+    position: absolute;
+    z-index: -1;
+    top: 350px;
+    right: 0;
+  }
 
-    background-color: $dark-violet;
-    color: $light-gray;
+  width: 100%;
+  min-width: 375px;
+  height: 500px;
+  padding: 93px 28px 93px 28px;
 
-    text-align: center;
-    
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-color: $dark-violet;
+  color: $light-gray;
+
+  text-align: center;
 }
 
-.humanizing__h2{
-    margin: 0;
-    margin-bottom: 24px;
-    font-size: 46px;
-    font-weight: 500;
-    line-height: 1;
+.humanizing__h2 {
+  margin: 0;
+  margin-bottom: 24px;
+  font-size: 46px;
+  font-weight: 500;
+  line-height: 1;
 }
 
-.humanizing__p{
-    margin-top: 0;
-    margin-bottom: 40px;
+.humanizing__p {
+  margin-top: 0;
+  margin-bottom: 40px;
 
-    font-weight: normal;
-    line-height: 1.6;
+  font-weight: normal;
+  line-height: 1.6;
 
-    color: $light-gray;
+  color: $light-gray;
 }
 
-.humanizing__button{
-    min-width: 148px;
-    min-height: 40px;
-    background-color: $dark-violet;
-    color: $light-gray;
-    border: 2px solid $light-gray;
+.humanizing__button {
+  min-width: 148px;
+  min-height: 40px;
+  background-color: $dark-violet;
+  color: $light-gray;
+  border: 2px solid $light-gray;
 
+  transition: background-color 200ms ease-in-out, color 200ms ease-in-out,
+    font-weight 200ms ease-in-out;
+
+  &:hover {
+    font-weight: 600;
+    background-color: $light-gray;
+    color: $dark-violet;
+    cursor: pointer;
+  }
 }
