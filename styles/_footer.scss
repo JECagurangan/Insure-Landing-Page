@@ -8,25 +8,53 @@ footer {
     top: 0;
     width: 100%;
     max-height: 173.45px;
+
+    @media (min-width: $laptop-width) {
+      display: none;
+    }
+  }
+
+  .footer-bg-top-desktop {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+
+    @media (max-width: $laptop-width) {
+      display: none;
+    }
   }
 
   width: 100%;
   height: 1028px;
   padding-top: 90px;
-
   background-color: $light-gray;
+
+  @media (min-width: $laptop-width) {
+    height: 394px;
+    padding-top: 70px;
+    padding-right: 163px;
+    padding-left: 163px;
+  }
 }
 
 footer .logos {
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media (min-width: $laptop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
   .footer-logo {
     max-width: 116px;
     min-height: 20px;
 
     margin-bottom: 30px;
+    @media (min-width: $laptop-width) {
+      margin-bottom: 0;
+    }
   }
 
   .social {
@@ -50,6 +78,10 @@ footer .hr {
   justify-content: center;
   margin-top: 40px;
   margin-bottom: 40px;
+  @media (min-width: $laptop-width) {
+    margin-top: 36px;
+    margin-bottom: 52px;
+  }
 }
 
 footer span {
@@ -58,11 +90,25 @@ footer span {
   background-color: $dark-gray;
   width: 330px;
   height: 1px;
+  @media (min-width: $laptop-width) {
+    width: 100%;
+  }
+}
+
+.sections-container {
+  @media (min-width: $laptop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
 
 .footer-section {
   text-align: center;
   margin-bottom: 35px;
+
+  @media (min-width: $laptop-width) {
+    text-align: left;
+  }
 
   h4 {
     color: $dark-gray;

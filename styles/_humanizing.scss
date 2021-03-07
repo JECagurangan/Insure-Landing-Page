@@ -1,37 +1,74 @@
 .intro-img {
   width: 100%;
-  min-width: 375px;
-  min-height: 450px;
-  max-height: 450px;
+  min-width: 23.438em;
+  min-height: 28.125em;
+  max-height: 28.125em;
 
   background-image: url("./images/image-intro-mobile.jpg");
-  background-position: top;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media (min-width: 33.75em) {
+    display: none;
+  }
+}
+
+.intro-img-desktop {
+  position: absolute;
+  z-index: -2;
+  width: 33.875em;
+  max-height: 40.75em;
+  height: 100%;
+
+  background-image: url("./images/image-intro-desktop.jpg");
+
+  top: 6.563em;
+  right: 10.375em;
+
+  @media (max-width: $desktop-width - 1) {
+    display: none;
+  }
 }
 
 .humanizing {
   position: relative;
-  z-index: -2;
+  z-index: -3;
 
   .intro-bg-left-mobile {
     position: absolute;
     z-index: -1;
     top: 0;
     left: 0;
+    @media (min-width: $laptop-width) {
+      display: none;
+    }
   }
 
   .intro-bg-right-mobile {
     position: absolute;
     z-index: -1;
-    top: 350px;
+    top: 21.875em;
     right: 0;
+    @media (min-width: $laptop-width) {
+      display: none;
+    }
+  }
+
+  .intro-bg-left-desktop {
+    position: absolute;
+    z-index: -1;
+    bottom: -340px;
+    left: 0;
+    @media (max-width: $laptop-width - 1) {
+      display: none;
+    }
   }
 
   width: 100%;
-  min-width: 375px;
-  height: 500px;
-  padding: 93px 28px 93px 28px;
+  min-width: 23.438em;
+  height: 31.25em;
+  padding: 5.813em 1.75em;
 
   display: flex;
   flex-direction: column;
@@ -42,29 +79,45 @@
   color: $light-gray;
 
   text-align: center;
+
+  @media (min-width: $desktop-width) {
+    height: 600px;
+    padding: 6.563em 10.188em;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    text-align: left;
+  }
 }
 
 .humanizing__h2 {
   margin: 0;
-  margin-bottom: 24px;
-  font-size: 46px;
+  margin-bottom: 1.5em;
+  font-size: 2.875em;
   font-weight: 500;
   line-height: 1;
+
+  @media (min-width: $desktop-width) {
+    font-size: 4.438em;
+    width: 33.625em;
+  }
 }
 
 .humanizing__p {
   margin-top: 0;
-  margin-bottom: 40px;
-
+  margin-bottom: 2.5em;
   font-weight: normal;
   line-height: 1.6;
-
   color: $light-gray;
+  max-width: 43.063em;
+
+  @media (min-width: $desktop-width) {
+    width: 33.625em;
+  }
 }
 
 .humanizing__button {
-  min-width: 148px;
-  min-height: 40px;
+  min-width: 9.25em;
+  min-height: 2.5em;
   background-color: $dark-violet;
   color: $light-gray;
   border: 2px solid $light-gray;

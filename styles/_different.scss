@@ -1,14 +1,47 @@
 .different {
   width: 100%;
-  min-height: 1315px;
+  height: 1315px;
 
   padding: 140px 26px;
   text-align: center;
+
+  @media (min-width: $laptop-width) {
+    height: 935px;
+
+    padding: 306px 166px;
+    padding-bottom: 130px;
+
+    text-align: left;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 158px auto;
+    gap: 30px;
+
+    &_statement {
+      grid-column-start: 1;
+      grid-column-end: 4;
+    }
+  }
+}
+
+.different div:not(:first-child) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @media (min-width: $laptop-width) {
+    display: block;
+  }
 }
 
 .different .hr {
   display: flex;
   justify-content: center;
+
+  @media (min-width: $laptop-width) {
+    justify-content: flex-start;
+  }
 }
 
 .different span {
@@ -24,6 +57,10 @@
   font-size: 45px;
   margin-top: 30px;
   margin-bottom: 70px;
+  @media (min-width: $laptop-width) {
+    font-size: 70px;
+    margin-bottom: 40px;
+  }
 }
 
 .different h3 {
@@ -38,6 +75,8 @@
   margin: 0;
   margin-bottom: 50px;
   line-height: 1.8;
+
+  max-width: 369px;
 }
 
 .different .last-p {

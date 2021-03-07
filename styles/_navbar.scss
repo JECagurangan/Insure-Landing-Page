@@ -1,26 +1,85 @@
 .navbar {
   width: 100%;
-  padding: 25px;
-  max-height: 80px;
+  padding: 1.5em;
+  @media (min-width: $desktop-width) {
+    padding: 1.875em 10.5em;
+  }
+  max-height: 5em;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  background-color: white;
+
+  .intro-bg-right-desktop {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    @media (max-width: $laptop-width - 1) {
+      display: none;
+    }
+  }
 }
 
 .navbar__logo {
-  height: 20px;
-  max-width: 112px;
-  max-height: 20px;
+  height: 1.25em;
+  max-width: 7.125em;
+  max-height: 1.25em;
+}
+
+.navbar__links {
+  width: 27.938em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700;
+
+  a {
+    text-decoration: none;
+    color: $dark-gray;
+
+    transition: color 200ms ease-in-out;
+
+    &:hover {
+      color: $dark-violet;
+    }
+  }
+
+  #view-plans {
+    font-weight: 700;
+    height: 2.5em;
+    width: 9.125em;
+    border: 2px solid $dark-violet;
+    background-color: white;
+
+    transition: background-color 200ms ease-in-out, color 200ms ease-in-out,
+      font-weight 200ms ease-in-out;
+
+    &:hover {
+      background-color: $dark-violet;
+      color: white;
+      font-weight: 500;
+      cursor: pointer;
+    }
+  }
+  @media (max-width: 47.438em) {
+    display: none;
+  }
 }
 
 .navbar__hamburger {
-  width: 34px;
-  height: 34px;
+  width: 2.125em;
+  height: 2.125em;
 
   background-image: url("./images/icon-hamburger.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media (min-width: 47.5em) {
+    display: none;
+  }
 }
 
 .hamburger-view {
@@ -31,12 +90,12 @@
   transition: visibility 0s, opacity 0.5s linear;
 
   background-color: $darker-violet;
-  height: 588px;
+  height: 36.75em;
   width: 100%;
 
-  padding-top: 54px;
-  padding-right: 24px;
-  padding-left: 24px;
+  padding-top: 3.375em;
+  padding-right: 1.5em;
+  padding-left: 1.5em;
 
   text-align: center;
   color: $light-gray;
@@ -54,16 +113,16 @@
     left: 0;
     bottom: 0;
     width: 100%;
-    max-height: 218px;
+    max-height: 13.625em;
   }
 
   h2 {
-    padding: 10px 0px;
+    padding: 0.625em 0em;
     margin: 0;
     font-family: "Karla", sans-serif; //400 700
     font-weight: 400;
-    font-size: 20px;
-    min-width: 327px;
+    font-size: 1.25em;
+    min-width: 20.438em;
   }
 
   h2:nth-of-type(1) {
@@ -71,10 +130,10 @@
   }
 
   h2:not(:last-child) {
-    margin-bottom: 30px;
+    margin-bottom: 1.875em;
   }
 
   .plans {
-    border: 2px solid $light-gray;
+    border: 0.125em solid $light-gray;
   }
 }
