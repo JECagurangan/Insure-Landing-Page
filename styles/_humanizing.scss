@@ -22,6 +22,9 @@
   height: 100%;
 
   background-image: url("./images/image-intro-desktop.jpg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
 
   top: 6.563em;
   right: 10.375em;
@@ -84,21 +87,41 @@
     height: 600px;
     padding: 6.563em 10.188em;
     align-items: flex-start;
-    justify-content: space-evenly;
+    justify-content: space-between;
     text-align: left;
+  }
+}
+
+.humanizing {
+  .hr {
+    display: flex;
+    justify-content: center;
+
+    @media (min-width: $laptop-width) {
+      justify-content: flex-start;
+    }
+
+    span {
+      display: block;
+
+      background-color: white;
+      width: 152px;
+      height: 2px;
+    }
   }
 }
 
 .humanizing__h2 {
   margin: 0;
-  margin-bottom: 1.5em;
+  margin-top: 20px;
+  margin-bottom: 42px;
   font-size: 2.875em;
   font-weight: 500;
   line-height: 1;
 
   @media (min-width: $desktop-width) {
     font-size: 4.438em;
-    width: 33.625em;
+    max-width: 538px;
   }
 }
 

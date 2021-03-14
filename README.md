@@ -35,7 +35,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/JECagurangan/Insure-Landing-Page](https://github.com/JECagurangan/Insure-Landing-Page)
-- Live Site URL: [https://je-insure-landing-page.netlify.app/](https://je-insure-landing-page.netlify.app/)
+- Live Site URL: [https://je-insure-landing-page.netlify.app/](https://je-insure-landing-page.netlify.app)
 
 ## My process
 

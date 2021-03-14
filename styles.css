@@ -110,9 +110,10 @@ h3 {
 }
 
 .navbar__links #view-plans {
-  font-weight: 700;
-  height: 2.5em;
-  width: 9.125em;
+  font-weight: 500;
+  height: 3em;
+  width: 10.125em;
+  letter-spacing: 1px;
   border: 2px solid #2d2640;
   background-color: white;
   -webkit-transition: background-color 200ms ease-in-out, color 200ms ease-in-out, font-weight 200ms ease-in-out;
@@ -230,6 +231,9 @@ h3 {
   max-height: 40.75em;
   height: 100%;
   background-image: url("./images/image-intro-desktop.jpg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
   top: 6.563em;
   right: 10.375em;
 }
@@ -311,16 +315,41 @@ h3 {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     text-align: left;
   }
 }
 
+.humanizing .hr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (min-width: 64em) {
+  .humanizing .hr {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+.humanizing .hr span {
+  display: block;
+  background-color: white;
+  width: 152px;
+  height: 2px;
+}
+
 .humanizing__h2 {
   margin: 0;
-  margin-bottom: 1.5em;
+  margin-top: 20px;
+  margin-bottom: 42px;
   font-size: 2.875em;
   font-weight: 500;
   line-height: 1;
@@ -329,7 +358,7 @@ h3 {
 @media (min-width: 90em) {
   .humanizing__h2 {
     font-size: 4.438em;
-    width: 33.625em;
+    max-width: 538px;
   }
 }
 
@@ -548,6 +577,7 @@ h3 {
   font-weight: 500;
   margin: 0;
   margin-bottom: 46px;
+  line-height: 1;
 }
 
 @media (min-width: 90em) {
