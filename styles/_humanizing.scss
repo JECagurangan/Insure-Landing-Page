@@ -26,7 +26,7 @@
   top: 6.563em;
   right: 10.375em;
 
-  @media (max-width: $desktop-width - 1) {
+  @media (max-width: 89.9375em) {
     display: none;
   }
 }
@@ -60,7 +60,7 @@
     z-index: -1;
     bottom: -340px;
     left: 0;
-    @media (max-width: $laptop-width - 1) {
+    @media (max-width: 63.9375em) {
       display: none;
     }
   }

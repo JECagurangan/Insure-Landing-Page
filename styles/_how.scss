@@ -30,7 +30,7 @@
     z-index: -1;
     top: 0;
     right: 0;
-    @media (max-width: $desktop-width - 1) {
+    @media (max-width: 89.9375em) {
       display: none;
     }
   }
