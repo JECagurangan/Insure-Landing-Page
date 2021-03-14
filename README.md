@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./images/Screenshot_2021-03-14 Frontend Mentor Insure landing page.png)
+![](./images/Screenshot_2021-03-14.png)
 
 ### Links
 
