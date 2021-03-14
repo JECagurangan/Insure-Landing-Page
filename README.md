@@ -1,6 +1,6 @@
 # Frontend Mentor - Insure Landing Page Solution
 
-This is a solution to the [Insure Landing Page on Frontend Mentor](https://www.frontendmentor.io/challenges/insure-landing-page-uTU68JV8). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [Insure Landing Page on Frontend Mentor](https://www.frontendmentor.io/challenges/insure-landing-page-uTU68JV8).
 
 ## Table of contents
 
@@ -12,8 +12,6 @@ This is a solution to the [Insure Landing Page on Frontend Mentor](https://www.f
   - [Built with](#built-with)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -36,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github](https://github.com/JECagurangan/Insure-Landing-Page)
-- Live Site URL: [Netlify](https://je-insure-landing-page.netlify.app/)
+- Solution URL: [https://github.com/JECagurangan/Insure-Landing-Page](https://github.com/JECagurangan/Insure-Landing-Page)
+- Live Site URL: [https://je-insure-landing-page.netlify.app/](https://je-insure-landing-page.netlify.app/)
 
 ## My process
 
